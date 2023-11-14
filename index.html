@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Millionaire Game</title>
+</head>
+<body>
+    <div id="timer">60</div> <!-- set a 60" timer for question answer-->
+
+    <div class="square50">50/50</div>
+    <div class="square">Hall Assistance</div>
+    <div class="square">Call a Friend</div>
+    <div class="End Game"> End Game</div>
+
+    <h2 id="questions"></h2>
+    <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox1" value="checkboxValue">
+    <label for="checkbox1" class="answer-label"></label>
+    <input class="checkbox-input" type="checkbox" id="checkbox2" name="checkbox2" value="checkboxValue">
+    <label for="checkbox2" class="answer-label"></label>
+    <input class="checkbox-input" type="checkbox" id="checkbox3" name="checkbox3" value="checkboxValue">
+    <label for="checkbox3" class="answer-label"></label>
+    <input class="checkbox-input" type="checkbox" id="checkbox4" name="checkbox4" value="checkboxValue">
+    <label for="checkbox4" class="answer-label"></label>
+
+    <input type="button" class="button" value="confirm">
+
+    <table>
+        <tr class="tr">
+          <td>15</td><td>1 000 000</td>
+        </tr>
+        <tr>
+          <td>14</td><td>500 000</td>
+        </tr>
+        <tr>
+          <td>13</td><td>250 000</td>
+        </tr>
+        <tr>
+          <td>12</td><td>125 000</td>
+        </tr>
+        <tr>
+          <td>11</td><td>64 000</td>
+        </tr>
+        <tr class="tr">
+          <td>10</td><td>32 000</td>
+        </tr>
+        <tr>
+          <td>9</td><td>16 000</td>
+        </tr>
+        <tr>
+          <td>8</td><td>8 000</td>
+        </tr>
+        <tr>
+          <td>7</td><td>4 000</td>
+        </tr>
+        <tr>
+          <td>6</td><td>2 000</td>
+        </tr>
+        <tr class="tr">
+          <td>5</td><td>1 000</td>
+        </tr>
+        <tr>
+          <td>4</td><td>500</td>
+        </tr>
+        <tr>
+          <td>3</td><td>300</td>
+        </tr>
+        <tr>
+          <td>2</td><td>200</td>
+        </tr>	        	  	  
+        <tr>
+          <td>1</td><td>100</td>
+        </tr>
+      </table>
+
+      <div class="start">
+        <form action="">
+            <input type="text" name="user" id="user" required placeholder="Enter Your Name">  <!-- Player enters name -->
+            <input type="submit" id="start">
+        </form>
+      </div>
+
+      <div class="end">
+        <h1>Game Over</h1>
+        <h3 class="Result">You Lost!</h3>
+      </div>
+
+      <div class="reStart">
+        <h1 class="Hello"></h1>
+        <button id="gameStart">Start Game</button>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
