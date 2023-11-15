@@ -33,28 +33,42 @@ function checkAnswer(choiceIndex) { // Checks if the selected answer is correct
       }
     }
 
-    function fiftyFifty()  {
+    function useFiftyFifty() {
         const choices = document.querySelectorAll('#choices button');
         const correctAnswerIndex = correctAnswers[currentQuestionIndex];
 
         const incorrectIndices = [...Array(choices.length).keys()] //To randomly select two incorrect options 
             .filter(index => index !== correctAnswerIndex);
-        const andomIncorrectIndices = getRandomElements(incorrectIndices, 2) //Selects two random incorrect options 
+        const randomIncorrectIndices = getRandomElements(incorrectIndices, 2) //Selects two random incorrect options 
 
-        choices[randomIncorrectIndices[0]].classList.add('highlighted');
+        choices[randomIncorrectIndices[0]].classList.add('highlighted'); 
         choices[randomIncorrectIndices[1]].classList.add('highlighted');
         choices[randomIncorrectIndices[0]].disabled = true;
         choices[randomIncorrectIndices[1]].disabled = true;
     }
 
-function nextQuestion() {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < question.length) {
-    displayQuestion();
-  } else {
-    alert('You won! Congratulations');
-  }
-}
 
+    function nextQuestion() {
+     currentQuestionIndex++;
+    if (currentQuestionIndex < question.length) {
+         displayQuestion();
+     } else {
+      alert('You won! Congratulations');
+     }
+    }
+
+    function resetChoices() {
+        const choices = document.querySelectorAll('#choices button');
+        choices.forEach(choice => {
+          choice.classList.remove('highlighted');
+          choice.disabled = false;
+        });
+      }
+
+      function getRandomElements(arr, num) { //getting random elements from an array
+        const shuffled = arr.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, num);
+
+    }   
 
 displayQuestion();  // Goes back to initial display
