@@ -5,7 +5,7 @@ const correctAnswers = [2, 1, 0, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0, 2];
 let currentQuestionIndex = 0;
 
 
-function displayQuestion() { // displayig one question and asnwer options
+function displayQuestion() { // displayig a question and asnwer options
   const currentQuestion = question[currentQuestionIndex];
   const choices = answers[currentQuestionIndex];
 
