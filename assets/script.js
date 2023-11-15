@@ -33,12 +33,26 @@ function checkAnswer(choiceIndex) { // Checks if the selected answer is correct
       }
     }
 
+    function fiftyFifty()  {
+        const choices = document.querySelectorAll('#choices button');
+        const correctAnswerIndex = correctAnswers[currentQuestionIndex];
+
+        const incorrectIndices = [...Array(choices.length).keys()] //To randomly select two incorrect options 
+            .filter(index => index !== correctAnswerIndex);
+        const andomIncorrectIndices = getRandomElements(incorrectIndices, 2) //Selects two random incorrect options 
+
+        choices[randomIncorrectIndices[0]].classList.add('highlighted');
+        choices[randomIncorrectIndices[1]].classList.add('highlighted');
+        choices[randomIncorrectIndices[0]].disabled = true;
+        choices[randomIncorrectIndices[1]].disabled = true;
+    }
+
 function nextQuestion() {
   currentQuestionIndex++;
   if (currentQuestionIndex < question.length) {
     displayQuestion();
   } else {
-    alert('Quiz completed!');
+    alert('You won! Congratulations');
   }
 }
 
