@@ -4,8 +4,8 @@ const answers = [['Mars', 'Venus', 'Jupiter', 'Saturn'], ['Italy', 'Japan', 'Mex
 const correctAnswers = [2, 1, 0, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0, 2];
 let currentQuestionIndex = 0;
 
-
-function displayQuestion() { // displayig a question and asnwer options
+// displayig a question and answer options
+function displayQuestion() { 
   const currentQuestion = question[currentQuestionIndex];
   const choices = answers[currentQuestionIndex];
 
@@ -22,7 +22,9 @@ function displayQuestion() { // displayig a question and asnwer options
     choicesContainer.appendChild(button);
   });
 }
-function checkAnswer(choiceIndex) { // Checks if the selected answer is correct 
+
+// Checks if the selected answer is correct 
+function checkAnswer(choiceIndex) { 
       if (choiceIndex === correctAnswers[currentQuestionIndex]) {
         // Correct answer
         alert('Correct! Moving to the next question.');
@@ -33,7 +35,8 @@ function checkAnswer(choiceIndex) { // Checks if the selected answer is correct
       }
     }
 
-    function useFiftyFifty() {
+// a 50/50 button to remove two incorrect answers
+    function useFiftyFifty() { 
         const choices = document.querySelectorAll('#choices button');
         const correctAnswerIndex = correctAnswers[currentQuestionIndex];
 
@@ -45,6 +48,16 @@ function checkAnswer(choiceIndex) { // Checks if the selected answer is correct
         choices[randomIncorrectIndices[1]].classList.add('highlighted');
         choices[randomIncorrectIndices[0]].disabled = true;
         choices[randomIncorrectIndices[1]].disabled = true;
+    }
+
+// Get the friend's number from the user to call 
+    function callAFriend() {
+      const phoneNumber = prompt("Enter your friend's phone number:");
+      if (phoneNumber !== null && phoneNumber !== "") {
+        alert(`Calling ${phoneNumber}...`);
+      } else {
+        alert('Invalid phone number');
+      }
     }
 
 
