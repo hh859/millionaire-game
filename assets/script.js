@@ -4,6 +4,12 @@ const answers = [['Mars', 'Venus', 'Jupiter', 'Saturn'], ['Italy', 'Japan', 'Mex
 const correctAnswers = [2, 1, 0, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0, 2];
 let currentQuestionIndex = 0;
 
+/* To reset game back to start */
+function resetGame() {
+  currentQuestionIndex = 0;
+  displayQuestion();
+}
+
 /* displayig a question and answer options */
 function displayQuestion() {
   const currentQuestion = question[currentQuestionIndex];
@@ -31,6 +37,7 @@ function checkAnswer(choiceIndex) {
   } else {
     // Incorrect answer
     alert('Wrong answer! Game over.');
+    resetGame(); // Reset the game when it's over
   }
 }
 
@@ -66,6 +73,7 @@ function nextQuestion() {
     displayQuestion();
   } else {
     alert('You won! Congratulations');
+    resetGame(); //Reset the game after completing 
   }
 }
 
