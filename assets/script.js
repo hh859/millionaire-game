@@ -6,8 +6,20 @@ let currentQuestionIndex = 0;
 
 /* To reset game back to start */
 function resetGame() {
+  shuffleArrays(question, answers, correctAnswers); //Shuffle all elements 
   currentQuestionIndex = 0;
   displayQuestion();
+}
+
+function shuffleArrays(...arrays) {
+  const length = arrays[0].length;
+
+  for (let i = length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    for (const array of arrays) {
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
 }
 
 /* displayig a question and answer options */
