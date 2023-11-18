@@ -9,6 +9,10 @@ function resetGame() {
   shuffleArrays(question, answers, correctAnswers); //Shuffle all elements 
   currentQuestionIndex = 0;
   displayQuestion();
+  /* Setting a highlight to the table */
+  const tableRows = document.querySelectorAll('table tr');
+  tableRows.forEach(row => row.classList.remove('highlighted'));
+  tableRows[0].classList.add('highlighted');
 }
 
 function shuffleArrays(...arrays) {

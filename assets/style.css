@@ -53,6 +53,11 @@ body {
     width: 300px;
    
   }
+
+  tr.highlighted{
+    background-color: #3498db;
+    color: #fff;
+  }
   
    
   
