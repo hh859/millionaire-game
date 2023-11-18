@@ -27,7 +27,6 @@ function displayQuestion() {
 function checkAnswer(choiceIndex) {
   if (choiceIndex === correctAnswers[currentQuestionIndex]) {
     // Correct answer
-    alert('Correct! Moving to the next question.');
     nextQuestion();
   } else {
     // Incorrect answer
