@@ -7,12 +7,15 @@ let currentQuestionIndex = 0;
 /* To reset game back to start */
 function resetGame() {
   shuffleArrays(question, answers, correctAnswers); //Shuffle all elements 
-  currentQuestionIndex = 0;
+  currentQuestionIndex = question.length - 1; // Replacing 0 to set a highlight start from bottom to top
   displayQuestion();
-  /* Setting a highlight to the table */
+  highlightTableRow();
+}
+/* Setting a highlight to the table */
+function highlightTableRow() {
   const tableRows = document.querySelectorAll('table tr');
   tableRows.forEach(row => row.classList.remove('highlighted'));
-  tableRows[0].classList.add('highlighted');
+  tableRows[currentQuestionIndex].classList.add('highlighted');
 }
 
 function shuffleArrays(...arrays) {
@@ -84,11 +87,11 @@ function callAFriend() {
 
 
 function nextQuestion() {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < question.length) {
+  currentQuestionIndex--;
+  if (currentQuestionIndex >= 0) {
     displayQuestion();
+    highlightTableRow();
   } else {
-    alert('You won! Congratulations');
     resetGame(); //Reset the game after completing 
   }
 }
