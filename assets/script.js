@@ -29,6 +29,15 @@ function shuffleArrays(...arrays) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('startForm').addEventListener('submit', (event) => {
+      event.preventDefault(); 
+      const userName = document.getElementById('user').value; // Get the user's name from the input field
+      alert(`Hello, ${userName}! Let the game begin!`);
+      resetGame(); 
+  });
+});
+
 /* displayig a question and answer options */
 function displayQuestion() {
   const currentQuestion = question[currentQuestionIndex];
