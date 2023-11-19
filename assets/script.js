@@ -91,7 +91,8 @@ function nextQuestion() {
   if (currentQuestionIndex >= 0) {
     displayQuestion();
     highlightTableRow();
-  } else {
+  } else if (currentQuestionIndex === -1){
+    alert ('You Won! Congratulations');
     resetGame(); //Reset the game after completing 
   }
 }
