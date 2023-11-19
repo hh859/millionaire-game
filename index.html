@@ -7,15 +7,13 @@
     <title>Millionaire Game</title>
 </head>
 <body>
-    <div id="timer">60</div> <!-- set a 60" timer for question answer-->
-
- 
     
-
-    <h2 id="questions"></h2>
-    <h3 id="choices"></h3>
+    <h1 id="questions"></h1>
+    <h2 id="choices"></h2>
     <button onclick="useFiftyFifty()">50/50</button>
     <button onclick="callAFriend()">Call a Friend</button>
+    <button class="hint" onclick="getHallAssistance()">Hall Assistance</button>
+
     
 
     <table>
@@ -65,18 +63,6 @@
           <td>1</td><td>100</td>
         </tr>
       </table>
-
-      <div class="start">
-        <form action="">
-            <input type="text" name="user" id="user" required placeholder="Enter Your Name">  <!-- Player enters name -->
-            <input type="submit" id="start">
-        </form>
-      </div>
-
-      <div class="reStart">
-        <h1 class="Hello"></h1>
-        <button id="gameStart">Start Game</button>
-      </div>
       <script src="script.js"></script>
 </body>
 </html>
