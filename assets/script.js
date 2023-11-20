@@ -3,6 +3,7 @@ const question = ['What is the largest planet in our solar system?', 'Which coun
 const answers = [['Mars', 'Venus', 'Jupiter', 'Saturn'], ['Italy', 'Japan', 'Mexico', 'India'], ['Ottawa', 'Toronto', 'Vancouver', 'Montreal'], ['Vincent van Gogh', 'Pablo Picasso', 'Leonardo da Vinci', 'Claude Monet'], ['Poseidon', 'Hades', 'Zeus', 'Apollo'], ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'], ['Madonna', 'Prince', 'Michael Jackson', 'Elvis Presley'], ['Neverland Academy', 'Hogwarts School of Witchcraft and Wizardry', 'Starfleet Academy', 'Xaviers School for Gifted Youngsters'], ['Soccer', 'Basketball', 'Tennis', 'Golf'], ['Steve Jobs', 'Paul Allen', 'Larry Page', 'Mark Zuckerberg'], ['3.14', '2.71', '1.61', '4.20'], ['William Shakespeare', 'Jane Austen', 'Charles Dickens', 'Mark Twain'], ['1492', '1588', '1776', '1620'], ['Oxygen', 'Gold', 'Silver', 'Iron'], ['Rome', 'Berlin', 'Paris', 'Madrid']];
 const correctAnswers = [2, 1, 0, 2, 2, 2, 2, 1, 1, 1, 0, 0, 0, 0, 2];
 let currentQuestionIndex = 0;
+let fiftyFiftyUsed = false; // Tracks if 50/50 lifeline has been used
 
 /* To reset game back to start */
 function resetGame() {
@@ -10,6 +11,7 @@ function resetGame() {
   currentQuestionIndex = question.length - 1; // Replacing 0 to set a highlight start from bottom to top
   displayQuestion();
   highlightTableRow();
+  fiftyFiftyUsed = false; //Reset the 50/50 lifeline availability
 }
 /* Setting a highlight to the table */
 function highlightTableRow() {
@@ -43,7 +45,7 @@ function displayQuestion() {
   const currentQuestion = question[currentQuestionIndex];
   const choices = answers[currentQuestionIndex];
 
-  const questionTitle = document.getElementById('questions');
+  const questionTitle = document.getElementById('question');
   const choicesContainer = document.getElementById('choices');
 
   questionTitle.textContent = currentQuestion;
@@ -71,6 +73,7 @@ function checkAnswer(choiceIndex) {
 
 /* a 50/50 button to remove two incorrect answers */
 function useFiftyFifty() {
+  if (!fiftyFiftyUsed) {
   const choices = document.querySelectorAll('#choices button');
   const correctAnswerIndex = correctAnswers[currentQuestionIndex];
 
@@ -78,10 +81,15 @@ function useFiftyFifty() {
     .filter(index => index !== correctAnswerIndex);
   const randomIncorrectIndices = getRandomElements(incorrectIndices, 2) //Selects two random incorrect options 
 
-  choices[randomIncorrectIndices[0]].classList.add('highlighted');
-  choices[randomIncorrectIndices[1]].classList.add('highlighted');
+  choices[randomIncorrectIndices[0]].style.textDecoration = 'line-through'; 
+  choices[randomIncorrectIndices[1]].style.textDecoration = 'line-through';
   choices[randomIncorrectIndices[0]].disabled = true;
   choices[randomIncorrectIndices[1]].disabled = true;
+
+  fiftyFiftyUsed = true;
+  } else {
+    document.getElementById('buttonId').disabled = false; //disables the button until the rest of the game
+  }
 }
 
 /* Get the friend's number from the user to call */
