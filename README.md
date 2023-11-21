@@ -1,39 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Interactive Frontend Development Project "Millionaire Game"
 
-Welcome,
+Millionaire Game is an online game created with the purpose of entertainment. The inspiration for the game came from the popular TV show "Who Wants to be a Millionaire?" which I loved watching in my childhood. The game interface resembles the one of the actual show, where there is a question in the middle of the screen, four answer options, three lifeline buttons and a score that indicates current position and financial reward. The rules of the game are simple - answer all 15 questions to win the game.
+https://github.com/hh859/millionaire-game/blob/main/README.md
+## UX Aims
+- Positive and enjoyable interaction with the game
+- Responsive control for accurate and precise use of the buttons
+- Realistic and immersive design 
+- Fully responsive design to be accessible across various devices
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## User Stories 
+- I want to see a welcoming screen with clear instructions on how to start the game, so I can easily understand how to begin
+- I want to see lifeline options (50/50, Phone a Friend, Hall Assistance) clearly presented, so I can use them strategically.
+- I want to receive feedback on my progress, including reaching specific monetary milestones and achievements, to keep me motivated.
+- I want to have the option to replay the game or start a new session, so I can continue enjoying the experience.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Design and Development 
+The initial design was developed in [Balsamiq](https://balsamiq.com). It included a home page and a game page. The final version looks slightly different, reflecting the timescale of the project and my own abilities.
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/front%20page.png)
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page.png)
 
-## Codeanywhere Reminders
+### Home page
+This page is structured in a minimalistic design, where the player puts their name to go on to the next page and start the game. Once the name is typed in, a message welcoming a user by their name is displayed.
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/home%20page.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+ ### Game page 
+ Once the credentials are validated, the user lands on the game page, where the game is set to begin. The layout is simple - a question in the middle of the screen, four answer options, lifeline buttons and a score track which also indicates an incentive reward. 
+ The initial design also intended to include a 60" timer to answer each question and background music. However, due to the time constraint, the only essential elements of the game functioning were create:
+  ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page%20.png)
 
-`python3 -m http.server`
+### Mobile view 
+  ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/mobile%20view.jpeg)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Testing 
+The initial part of the game was created in HTML and CSS to style the elements. To create a grid for the answer options I initially attempted to use Bootstrap, but was having difficulty arranging them as required. At the end, I used CSS to style the elements. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Trying to validate username credentials 
+In an attempt to create a more interactive environment, I tried to set up a start page, where a user must put their name in order to go onto the game page. I used getElementById but was having difficulty passing the User Name from index.hmtl to game.html. With the support of my tutor, I merged two pages together and added startContainer.style.display = 'none'; to hide the form once used.
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
