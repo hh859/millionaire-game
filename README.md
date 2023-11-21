@@ -1,7 +1,7 @@
 # Interactive Frontend Development Project "Millionaire Game"
 
 Millionaire Game is an online game created with the purpose of entertainment. The inspiration for the game came from the popular TV show "Who Wants to be a Millionaire?" which I loved watching in my childhood. The game interface resembles the one of the actual show, where there is a question in the middle of the screen, four answer options, three lifeline buttons and a score that indicates current position and financial reward. The rules of the game are simple - answer all 15 questions to win the game.
-
+https://github.com/hh859/millionaire-game/blob/main/README.md
 ## UX Aims
 - Positive and enjoyable interaction with the game
 - Responsive control for accurate and precise use of the buttons
@@ -33,5 +33,13 @@ This page is structured in a minimalistic design, where the player puts their na
 
 ## Testing 
 The initial part of the game was created in HTML and CSS to style the elements. To create a grid for the answer options I initially attempted to use Bootstrap, but was having difficulty arranging them as required. At the end, I used CSS to style the elements. 
+
+### Trying to validate username credentials 
+In an attempt to create a more interactive environment, I tried to set up a start page, where a user must put their name in order to go onto the game page. I used getElementById but was having difficulty passing the User Name from index.hmtl to game.html. With the support of my tutor, I merged two pages together and added startContainer.style.display = 'none'; to hide the form once used.
+
+
+
+
+
 
 
