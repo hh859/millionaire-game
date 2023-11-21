@@ -88,6 +88,7 @@ function useFiftyFifty() {
 
   fiftyFiftyUsed = true;
   } else {
+    document.getElementById('buttonId').classList.remove('highlighted');
     document.getElementById('buttonId').disabled = false; //disables the button until the rest of the game
   }
 }
