@@ -26,7 +26,7 @@ h1 {
 
 button {
   background-color: #f77f00;
-  color: white;
+  color: black;
   border: solid 2px #8f2d56;
   padding: 10px 20px;
   cursor: pointer;
@@ -56,4 +56,31 @@ table {
 tr.highlighted {
   background-color: #bc4749;
   color: #fff;
+}
+
+.start {
+  text-align: center;
+}
+
+.start form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: solid 3px #fcbf49;
+}
+
+.begin {
+  background-color: #fcbf49;
+  color: black;
+  border: solid 2px #776B5D;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
 }

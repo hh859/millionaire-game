@@ -30,12 +30,13 @@ function shuffleArrays(...arrays) {
     }
   }
 }
-
+/* Welcoming message to the user once their name is entered */
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('startForm').addEventListener('submit', (event) => {
       event.preventDefault(); 
       const userName = document.getElementById('user').value; // Get the user's name from the input field
       alert(`Hello, ${userName}! Let the game begin!`);
+      startContainer.style.display = 'none'; // To hide the start form after name input
       resetGame(); 
   });
 });
