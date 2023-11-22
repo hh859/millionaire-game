@@ -26,8 +26,7 @@ This page is structured in a minimalistic design, where the player puts their na
 
  ### Game page - initial design 
  Once the credentials are validated, the user lands on the game page, where the game is set to begin. The layout is simple - a question in the middle of the screen, four answer options, lifeline buttons and a score track which also indicates an incentive reward. 
- The initial design also intended to include a 60" timer to answer each question and background music. However, due to the time constraint, the only essential elements of the game functioning were created:
-  ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page%20.png)
+ The initial design also intended to include a 60" timer to answer each question and background music. However, due to the time constraint, the only essential elements of the game functioning were created.
 
 ## Testing 
 The initial part of the game was created in HTML and CSS to style the elements. I initially attempted to use Bootstrap to create a grid for the answer options but was having difficulty arranging them as required. In the end, I used CSS to style the elements. 
