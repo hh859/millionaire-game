@@ -44,8 +44,8 @@ In an attempt to create a more interactive environment, I tried to set up a star
 ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/CSS%20Validation.png)
 
 * #### Lighthouse
-![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/CSS%20Validation.png)
-![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/CSS%20Validation.png)
+![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Lighthouse.png)
+![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Lighthouse.01.png)
 ## Features to add 
 - I would like to add a timer that would count 20" for each question and, if not answered, would automatically display "Game Over", restarting the game.
 - I would like to improve the visuals of the page so it is more obvious for the user what kind of game it is.
