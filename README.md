@@ -86,5 +86,5 @@ A copy of the GitHub repository can be created to allow viewing and modification
 - [Code Institute](https://learn.codeinstitute.net/dashboard) and [W3School](https://www.w3schools.com) were used for for help with code.
 
 ## Acknowledgment
-I would like to express a big gratitude to my mentor Jack and to my tutor Komal, for invaluable help and guidance throughout the project. 
+I would like to express a big gratitude to my mentor Jack Wachira and to my tutor Komal Karir, for invaluable help and guidance throughout the project. 
 
