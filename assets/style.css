@@ -17,6 +17,11 @@ h1 {
   position: relative;
 }
 
+h3 {
+  color: white;
+  font-size: 26px;
+}
+
 #choices {
   font-size: 18px;
   display: grid;
