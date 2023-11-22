@@ -1,6 +1,7 @@
 # Interactive Frontend Development Project "Millionaire Game"
 
 Millionaire Game is an online game created with the purpose of entertainment. The inspiration for the game came from the popular TV show "Who Wants to be a Millionaire?" which I loved watching in my childhood. The game interface resembles the one of the actual show, where there is a question in the middle of the screen, four answer options, three lifeline buttons and a score that indicates current position and financial reward. The rules of the game are simple - answer all 15 questions to win the game.
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Head%20image%20.png)
 
 ## UX Aims
 - Positive and enjoyable interaction with the game
@@ -25,8 +26,7 @@ This page is structured in a minimalistic design, where the player puts their na
 
  ### Game page - initial design 
  Once the credentials are validated, the user lands on the game page, where the game is set to begin. The layout is simple - a question in the middle of the screen, four answer options, lifeline buttons and a score track which also indicates an incentive reward. 
- The initial design also intended to include a 60" timer to answer each question and background music. However, due to the time constraint, the only essential elements of the game functioning were created:
-  ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page%20.png)
+ The initial design also intended to include a 60" timer to answer each question and background music. However, due to the time constraint, the only essential elements of the game functioning were created.
 
 ## Testing 
 The initial part of the game was created in HTML and CSS to style the elements. I initially attempted to use Bootstrap to create a grid for the answer options but was having difficulty arranging them as required. In the end, I used CSS to style the elements. 
@@ -44,7 +44,8 @@ In an attempt to create a more interactive environment, I tried to set up a star
 ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/CSS%20Validation.png)
 
 * #### Lighthouse
-![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/CSS%20Validation.png)
+![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Lighthouse.png)
+![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Lighthouse.01.png)
 ## Features to add 
 - I would like to add a timer that would count 20" for each question and, if not answered, would automatically display "Game Over", restarting the game.
 - I would like to improve the visuals of the page so it is more obvious for the user what kind of game it is.
@@ -84,5 +85,5 @@ A copy of the GitHub repository can be created to allow viewing and modification
 - [Code Institute](https://learn.codeinstitute.net/dashboard) and [W3School](https://www.w3schools.com) were used for for help with code.
 
 ## Acknowledgment
-I would like to express a big gratitude to my mentor Jack and to my tutor Komal, for invaluable help and guidance throughout the project. 
+I would like to express a big gratitude to my mentor Jack Wachira and to my tutor Komal Karir, for invaluable help and guidance throughout the project. 
 
