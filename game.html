@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Millionaire Game</title>
 </head>
 <body>
-    <header>
-        <h3>Millionaire Game</h3>
-      </header>
-
+  <div class="container">
+  <div class="left-section">  
   <h1 id="question"></h1>
   <h2 id="choices"></h2>
   <button class="hint" onclick="useFiftyFifty()">50/50</button>
   <button class="hint" onclick="callAFriend()">Call a Friend</button>
   <button class="hint" onclick="getHallAssistance()">Hall Assistance</button>
+    </div>
 
+  <div class="table-section">
   <table>
     <tr class="tr">
       <td>15</td>
@@ -79,6 +79,8 @@
       <td>100</td>
     </tr>
   </table>
+    </div>
+    </div>
   <script src="script.js"></script>
 </body>
 

@@ -1,8 +1,28 @@
 body {
-  background-color: #003049;
-  object-position: center;
+  background: url('Who-Wants-to-be-a-millionaire.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.table-section {
   text-align: center;
-  height: 200px;
+  margin-right: 60px;
+}
+
+.left-section {
+  text-align: center;
+  margin-left: 50px;
 }
 
 h1 {
@@ -55,7 +75,7 @@ table {
   margin: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
+  width: 400px;
 }
 
 tr.highlighted {
