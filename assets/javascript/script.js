@@ -31,15 +31,22 @@ function shuffleArrays(...arrays) {
     }
   }
 }
-/* Welcoming message to the user once their name is entered */
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('startForm').addEventListener('submit', (event) => {
-      event.preventDefault(); 
-      const userName = document.getElementById('user').value; // Get the user's name from the input field
-      alert(`Hello, ${userName}! Let the game begin!`);
-      startContainer.style.display = 'none'; // To hide the start form after name input
-      resetGame(); 
-  });
+
+function redirectToGamePage() {
+  const username = document.getElementById('username').value;
+  if (username.trim() !== "") {
+    // Redirect to the game page with username as a URL parameter
+    window.location.href = `game.html?username=${encodeURIComponent(username)}`;
+  } else {
+    alert('Please enter your name.');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const params = new URLSearchParams(window.location.search); //Retriving username from URL
+  const username = params.get('username');
+
+  document.getElementById('welcomeUsername').textContent = username; //Displaying the welcome message 
 });
 
 /* displayig a question and answer options */

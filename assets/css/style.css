@@ -40,6 +40,12 @@ h1 {
 h3 {
   color: white;
   font-size: 26px;
+  margin-left: 100px;
+  padding: 8px;
+  border: solid 3px #fcbf49;
+  background-color: pink;
+  width: 250px;
+  text-align: center;
 }
 
 #choices {
@@ -91,6 +97,7 @@ tr.highlighted {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 100px;
 }
 
 .start input {
@@ -100,7 +107,7 @@ tr.highlighted {
 }
 
 .begin {
-  background-color: #fcbf49;
+  background-color: pink;
   color: black;
   border: solid 2px #776B5D;
   padding: 10px 20px;
