@@ -32,8 +32,13 @@ This page is structured in a minimalistic design, where the player puts their na
 ## Testing 
 The initial part of the game was created in HTML and CSS to style the elements. I initially attempted to use Bootstrap to create a grid for the answer options but was having difficulty arranging them as required. In the end, I used CSS to style the elements. 
 
+
 ### Trying to validate username credentials 
 In an attempt to create a more interactive environment, I tried to set up a start page, where a user must put their name in order to go onto the game page. I used getElementById but was having difficulty passing the User Name from index.hmtl to game.html. With the support of my tutor, I merged two pages together and added startContainer.style.display = 'none'; to hide the form once used.
+#### Update:
+The HTML page was divided back to index.html and game html. I attempted to pass the username as a URL parameter and then retrieve it on the second page. However, the username only appeared in the url and did not appear on the page.
+
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/username%20URL.png)
 
 ### Code validation 
  * #### HTML
