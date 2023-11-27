@@ -1,7 +1,7 @@
 # Interactive Frontend Development Project "Millionaire Game"
 
 Millionaire Game is an online game created with the purpose of entertainment. The inspiration for the game came from the popular TV show "Who Wants to be a Millionaire?" which I loved watching in my childhood. The game interface resembles the one of the actual show, where there is a question in the middle of the screen, four answer options, three lifeline buttons and a score that indicates current position and financial reward. The rules of the game are simple - answer all 15 questions to win the game.
- ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Head%20image%20.png)
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/head%20image.png)
 
 ## UX Aims
 - Positive and enjoyable interaction with the game
@@ -17,8 +17,8 @@ Millionaire Game is an online game created with the purpose of entertainment. Th
 
 ## Design and Development 
 The initial design was developed in [Balsamiq](https://balsamiq.com). It included a home page and a game page. The final version looks slightly different, reflecting the timescale of the project and my own abilities.
- ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/front%20page.png)
- ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page.png)
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/front%20page%20draft.png)
+ ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page%20draft.png)
 
 ### Home page - initial design
 This page is structured in a minimalistic design, where the player puts their name to go on to the next page and start the game. Once the name is typed in, a message welcoming a user by their name is displayed.
@@ -27,14 +27,13 @@ This page is structured in a minimalistic design, where the player puts their na
  ### Game page - initial design 
  Once the credentials are validated, the user lands on the game page, where the game is set to begin. The layout is simple - a question in the middle of the screen, four answer options, lifeline buttons and a score track which also indicates an incentive reward. 
  The initial design also intended to include a 60" timer to answer each question and background music. However, due to the time constraint, the only essential elements of the game functioning were created.
+  ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/game%20page.png)
 
 ## Testing 
 The initial part of the game was created in HTML and CSS to style the elements. I initially attempted to use Bootstrap to create a grid for the answer options but was having difficulty arranging them as required. In the end, I used CSS to style the elements. 
 
 ### Trying to validate username credentials 
 In an attempt to create a more interactive environment, I tried to set up a start page, where a user must put their name in order to go onto the game page. I used getElementById but was having difficulty passing the User Name from index.hmtl to game.html. With the support of my tutor, I merged two pages together and added startContainer.style.display = 'none'; to hide the form once used.
-#### This is the final outlook of the HTML page:
-   ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/updated%20actual%20game%20page%20.png)
 
 ### Code validation 
  * #### HTML
@@ -45,7 +44,6 @@ In an attempt to create a more interactive environment, I tried to set up a star
 
 * #### Lighthouse
 ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Lighthouse.png)
-![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/Lighthouse.01.png)
 ## Features to add 
 - I would like to add a timer that would count 20" for each question and, if not answered, would automatically display "Game Over", restarting the game.
 - I would like to improve the visuals of the page so it is more obvious for the user what kind of game it is.
