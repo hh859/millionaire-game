@@ -1,5 +1,5 @@
 body {
-  background: url('Who-Wants-to-be-a-millionaire.jpg') no-repeat center center fixed;
+  background: url('../images/Who-Wants-to-be-a-millionaire.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: space-between;
