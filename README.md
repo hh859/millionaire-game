@@ -1,7 +1,7 @@
 # Interactive Frontend Development Project "Millionaire Game"
 
 Millionaire Game is an online game created with the purpose of entertainment. The inspiration for the game came from the popular TV show "Who Wants to be a Millionaire?" which I loved watching in my childhood. The game interface resembles the one of the actual show, where there is a question in the middle of the screen, four answer options, three lifeline buttons and a score that indicates current position and financial reward. The rules of the game are simple - answer all 15 questions to win the game.
-[Play here -](https://hh859.github.io/millionaire-game/)
+[Click here to play](https://hh859.github.io/millionaire-game/)
  ![alt text](https://github.com/hh859/millionaire-game/blob/main/assets/images/head%20image.png)
 
 ## UX Aims
